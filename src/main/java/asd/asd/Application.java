@@ -21,6 +21,7 @@ public class Application implements CommandLineRunner {
     private PasswordEncoder passwordEncoder;
 
     public static void main(String[] args) {
+        System.out.print("main");
         SpringApplication.run(Application.class, args);
     }
 
