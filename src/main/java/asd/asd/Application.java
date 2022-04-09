@@ -21,8 +21,9 @@ public class Application implements CommandLineRunner {
     private PasswordEncoder passwordEncoder;
 
     public static void main(String[] args) {
-        System.out.print("main");
+        System.out.println("\n\n\nMain started....");
         SpringApplication.run(Application.class, args);
+        
     }
 
     @Override
@@ -31,7 +32,7 @@ public class Application implements CommandLineRunner {
         user.setName("demo");
         user.setPassword(passwordEncoder.encode("demo"));
         user.setEnabled(true);
-        user.setRoles(List.of("ROLE_USER"));
+        user.setRoles(List.of("ROLE_USER")); 
 
         User admin = new User();
         admin.setName("admin");
